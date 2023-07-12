@@ -35,6 +35,15 @@
 .feed {
   z-index: 1030;
 }
+.player-wrapper {
+  position: relative;
+  padding-top: 56.25%;
+}
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 .video-title {
   font-size: small;
   overflow: hidden;
@@ -77,11 +86,6 @@ div.scrollmenu li {
   }
   .scrollmenu p {
     font-size: small;
-  }
-}
-@media only screen and (max-width: 950px) {
-  .side-videos {
-    display: none;
   }
 }
 @media only screen and (max-width: 1200px) {

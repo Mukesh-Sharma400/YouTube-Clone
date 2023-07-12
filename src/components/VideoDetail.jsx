@@ -47,10 +47,14 @@ const VideoDetail = ({ selectedCategory, setSelectedCategory }) => {
             <div className="row">
               <div className="col-12 col-lg-8">
                 <div className="sticky-top">
-                  <div className="mb-2">
+                  <div className="player-wrapper mb-2">
                     <ReactPlayer
+                      className="react-player"
                       url={`https://www.youtube.com/watch?v=${id}`}
                       controls
+                      playing={true}
+                      width="100%"
+                      height="100%"
                     />
                   </div>
                   <h5 className="text-white mb-1">{title}</h5>
@@ -68,7 +72,10 @@ const VideoDetail = ({ selectedCategory, setSelectedCategory }) => {
                   </p>
                 </div>
               </div>
-              <div className="col-4 side-videos">
+              <div className="col-12 col-lg-4">
+                <h5 className="text-center text-white bg-body-tertiary rounded-2 mt-1 py-2">
+                  More Videos
+                </h5>
                 <Videos videos={videos} />
               </div>
             </div>
